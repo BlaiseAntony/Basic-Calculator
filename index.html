@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+</head>
+<body bgcolor= "white"><style>
+.d{height:50px; width:50px;background-color:Grey ;border-radius: 30%;font-size: 16px;}
+.f{height:50px;border-radius: 5%;} </style>
+<div align="center"><form name="calculator">
+<table>
+<tr>
+<input class="f" type="textfield" name="ans" value="">
+<input class="d" type="button" value="clr" onclick="document.calculator.ans.value=""></tr>
+<tr><td><input class="d" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+</td><td><input class="d" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+</td><td><input class="d" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+</td><td><input class="d" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+</td></tr><tr><td><input class="d" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+</td><td><input type="button" class="d" value="5" onClick="document.calculator.ans.value+='5'">
+</td><td><input type="button" value="6" class="d" onClick="document.calculator.ans.value+='6'">
+</td><td><input class="d" type="button" value="*" onClick="document.calculator.ans.value+='*'">
+</td></tr><tr><td><input class="d" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+</td><td><input type="button" class="d" value="2" onClick="document.calculator.ans.value+='2'">
+</td><td><input type="button" value="3" class="d" onClick="document.calculator.ans.value+='3'">
+</td><td><input type="button" value="-" class="d" onClick="document.calculator.ans.value+='-'">
+</td></tr><tr><td><input type="button" class="d" value="0" onClick="document.calculator.ans.value+='0'">
+</td><td><input type="button" value="." class="d" onClick="document.calculator.ans.value+='.'">
+
+</td><td><input class="d"type="button" value="+" onClick="document.calculator.ans.value+='+'">
+</td><td><input class="d"type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></td></tr>
+</table></form></div>
+</body>
+</html>
+
